@@ -509,9 +509,6 @@
 
 
 @media only screen and (max-width: 1000px) {
-    * {
-        overflow: hidden;
-    }
     
     #wrapper {
         width: 100vw;
@@ -523,6 +520,22 @@
     #home {
         width: 100vw;
         height: 100vh;
+    }
+
+    #home header {
+        height: 10vh;
+    } 
+    
+    #home header ul {
+        padding-top: 6%;
+        padding-right: 0%;
+    
+    }
+    
+    #home header li {
+        padding-right: 10%;
+    
+        font-size: 16px;
     }
     
     /* *********************************************** DIREITA *********************************************** */
@@ -557,6 +570,7 @@
     #home aside.direita .container div.perfil {
         width: 45%;
         height: 50%;
+        margin-left: 2%;
     }
     
     
@@ -591,9 +605,9 @@
         width: 50%;
     
         animation: typing1 1.5s steps(40) 0s normal;
-        
-        margin-left: 5%;
-        margin-top: 5%;
+
+        top: 3%;
+        left: 26%;
     
         white-space: nowrap;
     
@@ -612,94 +626,110 @@
     }
     
     #home .esquerda .container-esquerda .animacao2-br {
-        width: 70vw;
+        width: 56vw;
 
         animation: typing2 1.5s steps(40) 1.5s normal, transparente 1.5s 0s normal;
         
-        margin-left: 5%;
-        margin-top: 0%;
+        top: 53.5%;
+        left: 22%;
     }
     
     #home .esquerda .container-esquerda .animacao {
-        width: 50%;
+        width: 58%;
     
         animation: blink 500ms steps(40) infinite normal,
             typing3 1.5s steps(40) 3s normal, transparente 3s 0s normal;
         
-        margin-left: 5%;
+        top: 65%;
+        left: 21%;
     }
-    
-    #home .esquerda .container-esquerda h2 {
-        font-weight:  400;
-        font-size: 3vh;
-        line-height: 28px;
-    
-        text-align: left;
-        
-    }
-    
+
     #home .esquerda .container-esquerda h3 {
         font-weight: 700;
-        font-size: 1.7vh;
-    
-        padding-left: 5%;
-        margin-top: 5%;
+        font-size: 1.9vh;
+
+        top: 73%;
+        left: 6%;
+
+        text-align: center;
     }
     
     #home .esquerda .container-esquerda .botoes {
-        width: 100%;
-        height: 18vh;
-        margin-left: 8%;
-
+        width: 80%;
+        height: 10vh;
+        
+        position: absolute;
+    
+        top: 83%;
+        left: 10%;
     }
     
-    #home .esquerda .container-esquerda .botao1 {
-        width: 40%;
-        height: 50%;
+    #home .esquerda .container-esquerda button.botao1 {
+        width: 45%;
+        height: 80%;
+
+        background-color: #fff;
     
         border-radius: 15px;
-    
-        background-color: #FFFFFF;
+        border: 0px;
     
         display: inline-block;
     
-        margin-top: 10%;
-    
-        cursor: pointer;
-    
-    }
-    
-    #home .esquerda .container-esquerda .botao1 p.p-botao1 {
-        text-align: center;
-        font-weight: bold;
-        font-size: 18px;
+        outline: none;
     
         color: #4CB8F8;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
     
-        padding-top: 10%;
     }
     
     #home .esquerda .container-esquerda .botao2 {
         width: 40%;
-        height: 50%;
+        height: 80%;
     
         border-radius: 15px;
     
         display: inline-block;
-        margin-left: 2%;
+        margin-left: 10%;
+    
+        background-color: transparent;
+        border: 0px;
     
         cursor: pointer;
-    
-    }
-    
-    #home .esquerda .container-esquerda .botao2 p.p-botao2 {
-        text-align: center;
-        font-weight: bold;
-        font-size: 18px;
+        outline: none;
     
         color: #4CB8F8;
-        padding-top: 10%;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 33px;
     }
+
+    #home footer {
+        width: 100%;
+        height: 10vh;
+
+        position: absolute;
+
+        top: 90%;
+    }
+    
+    #home footer .icone {
+        width: 10%;
+        height: 100%;
+    
+        margin-left: 47.5%;
+    
+        color: #548AB0;
+    
+        cursor: pointer;
+    }
+    
+    #home footer .icone:hover {
+        color: #4CB8F8;
+        transition: 0.5s;
+    }
+
     
 }
 
