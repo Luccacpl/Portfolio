@@ -1,0 +1,484 @@
+html {
+	scroll-behavior: smooth;
+}
+
+#wrapper {
+	width: 100%;
+	color: white;
+}
+
+/* **************************** HEADER  **************************** */
+
+#wrapper header {
+	width: 100vw;
+	height: 10.5vh;
+	background: #191919;
+	max-height: 70px;
+	position: fixed;
+	display: flex;
+	top: 0;
+	z-index: 1;
+}
+
+#wrapper header .div-logo {
+	height: 10.5vh;
+	width: 10%;
+	max-height: 100px;
+	margin-left: 5%;
+}
+
+#wrapper header .div-logo img {
+	margin-top: 3%;
+}
+
+#wrapper header .div-logo img {
+	height: 60px;
+	margin-left: 5%;
+}
+
+#wrapper header nav {
+	margin: auto;
+	margin-left: 50%;
+}
+
+#wrapper header ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+#wrapper header li {
+	display: inline;
+	text-decoration: none;
+	font-size: 24px;
+	margin: 0 21px;
+}
+
+#wrapper header li a {
+	color: white;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+#wrapper header li a:hover {
+	color: #27ae60;
+}
+
+/* **************************** HOME **************************** */
+
+#wrapper main {
+	width: 100%;
+	height: 100vh;
+	background-color: red;
+}
+
+#home {
+	width: 100%;
+	height: 100vh;
+	background: #004978;
+	position: relative;
+}
+
+#home .bem-vindo {
+	float: left;
+	margin-top: 10%;
+	margin-left: 5%;
+
+	font-size: 3vh;
+	text-align: center;
+}
+
+#home .perfil {
+	width: 25%;
+	height: 45%;
+	background-image: url(../images/Eu.jpg);
+	background-size: cover;
+
+	border-radius: 50%;
+	border: 3px solid #27ae60;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.35);
+
+	position: absolute;
+	left: 37.5%;
+	top: 22.5%;
+
+	overflow: false;
+
+	animation: fadein 1s;
+
+	transition: 0.5s;
+}
+
+#home .perfil:hover {
+	box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.35);
+	border: 3px solid #00ff6a;
+}
+
+#home .nome {
+	width: 25%;
+	height: 12%;
+
+	text-align: center;
+
+	position: absolute;
+	top: 70%;
+	left: 37.5%;
+}
+
+#home .nome .h1 {
+	width: 100%;
+	margin: auto;
+	white-space: nowrap;
+}
+
+#home .nome .h2 {
+	white-space: nowrap;
+}
+
+#home .nome .h1 h1 {
+	width: 60%;
+	font-size: 4vh;
+
+	animation: typing 2s steps(40) 1s normal, transparente 1s 0s normal;
+	overflow: hidden;
+
+	margin: auto;
+}
+
+#home .nome .h2 h2 {
+	width: 88%;
+	font-size: 4vh;
+
+	border-right: 2px solid rgba(255, 255, 255, 0.75);
+
+	animation: blink 500ms steps(40) infinite normal,
+		typing 2s steps(40) 2s normal, transparente 2s 0s normal;
+	overflow: hidden;
+
+	margin: auto;
+	margin-top: 10px;
+}
+
+#home .nome h2 {
+	font-size: 3.5vh;
+	margin-top: 15px;
+}
+
+#home .setinha {
+	width: 60px;
+	height: 60px;
+	color: white;
+
+	position: absolute;
+	justify-content: center;
+	text-align: center;
+
+	transition: color 0.2s;
+}
+
+#home .setinha:hover {
+	color: #27ae60;
+}
+
+/* **************************** Animação foto **************************** */
+
+@keyframes fadein {
+	from {
+		left: 100%;
+		opacity: 0;
+	}
+	to {
+		left: 37.5%;
+		opacity: 1;
+	}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from {
+		left: 100%;
+		opacity: 0;
+	}
+	to {
+		left: 37.5%;
+		opacity: 1;
+	}
+}
+
+/* **************************** animação texto **************************** */
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink {
+	from {
+		border-right: 2px solid rgba(255, 255, 255, 0.75);
+	}
+	to {
+		border-right: 2px solid transparent;
+	}
+}
+
+@keyframes transparente {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+/* **************************** SOBRE **************************** */
+
+#sobre {
+	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
+	padding-top: 10px;
+}
+
+#sobre h1 {
+	text-align: center;
+	padding-top: 5%;
+}
+
+#sobre p {
+	text-align: center;
+	font-size: 3vh;
+	padding: 5vh;
+	padding-bottom: 5vh;
+}
+
+#sobre hr {
+	margin: 2vh auto;
+	width: 70%;
+}
+
+#sobre h2 {
+	text-align: center;
+	font-size: 3.5vh;
+	padding-top: 2%;
+}
+
+.technologies {
+	align-content: center;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 0px;
+	column-width: 100px;
+	margin-top: 2%;
+}
+
+.technologies .teste {
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.technologies .tech {
+	width: 100px;
+	height: 100px;
+	margin: 5% auto;
+}
+
+#sobre .setinha {
+	width: 60px;
+	height: 60px;
+	color: white;
+	margin-left: 48%;
+	margin-top: 6.5%;
+
+	transition: color 0.2s;
+}
+
+#sobre .setinha:hover {
+	color: #27ae60;
+}
+
+/* **************************** PORTFOLIO **************************** */
+
+#portfolio {
+	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
+	padding-top: 10px;
+	background-color: #004978;
+}
+
+#portfolio h1 {
+	text-align: center;
+	padding-top: 5%;
+}
+
+#portfolio .carousel {
+	margin: auto;
+	height: 75vh;
+	width: 75vw;
+	margin-top: 2%;
+}
+
+/* **************************** Media Carries **************************** */
+
+@media only screen and (max-width: 1300px) {
+	#sobre .setinha {
+		width: 60px;
+		height: 60px;
+		color: white;
+		margin-left: 48%;
+		margin-top: 0px;
+
+		transition: color 0.2s;
+	}
+
+	#portfolio .carousel {
+		margin: auto;
+		height: 70vh;
+		width: 70vw;
+		margin-top: 2%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#wrapper header {
+		width: 100vw;
+	}
+
+	#wrapper header nav {
+		margin: auto;
+		margin-left: 15%;
+		padding: 0;
+	}
+
+	#wrapper header li {
+		font-size: 16px;
+		margin: 0 5px;
+		padding: 0;
+	}
+
+	/* **************************** HOME **************************** */
+
+	#wrapper main {
+		width: 100%;
+		height: 100vh;
+	}
+
+	#home {
+		width: 100%;
+		height: 100vh;
+	}
+
+	#home .bem-vindo {
+		float: none;
+		padding-top: 20%;
+		margin-left: auto;
+
+		font-size: 2.5vh;
+	}
+
+	#home .perfil {
+		width: 55%;
+		height: 30%;
+
+		position: static;
+		margin-left: 22.5%;
+		margin-top: 10%;
+	}
+
+	#home .nome {
+		width: 100%;
+		height: 12vw;
+
+		margin-top: 10%;
+
+		position: static;
+	}
+
+	#home .nome .h1 h1 {
+		width: 60%;
+		font-size: 4vh;
+
+		animation: typing 2s steps(40) 1s normal, transparente 1s 0s normal;
+		overflow: hidden;
+
+		margin: auto;
+	}
+
+	#home .setinha {
+		margin-top: 10%;
+	}
+
+	/* **************************** SOBRE **************************** */
+
+	#sobre {
+		width: 100%;
+		height: 100vh;
+		max-height: 100vh;
+		padding-top: 10px;
+	}
+
+	#sobre h1 {
+		text-align: center;
+		padding-top: 20%;
+		font-size: 4vh;
+	}
+
+	#sobre p {
+		text-align: center;
+		font-size: 2.5vh;
+		padding: 3vh;
+		padding-bottom: 2vh;
+	}
+
+	#sobre hr {
+		margin: 2vh auto;
+		width: 70%;
+	}
+
+	#sobre h2 {
+		text-align: center;
+		font-size: 3.5vh;
+	}
+
+	.technologies {
+		align-content: center;
+		width: 80%;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 10%;
+		margin-left: 10%;
+	}
+
+	.technologies .tech {
+		width: 60%;
+		height: 10vh;
+		margin: 15% auto;
+	}
+
+	#sobre .setinha {
+		margin-left: 42%;
+		margin-top: 6.5%;
+	}
+
+	/* **************************** PORTFOLIO **************************** */
+
+	#portfolio h1 {
+		text-align: center;
+		padding-top: 30%;
+	}
+
+	#portfolio .carousel {
+		margin: auto;
+		height: 32vh;
+		width: 95vw;
+		margin-top: 20%;
+	}
+}

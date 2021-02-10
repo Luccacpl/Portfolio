@@ -1,0 +1,97 @@
+import React from 'react';
+import { FiChevronDown } from 'react-icons/fi';
+import AwesomeSlider from 'react-awesome-slider';
+
+import '../styles/principal.css';
+import 'react-awesome-slider/dist/styles.css';
+
+import Logo from '../images/logo_branco.png'
+import reactLogo from '../images/React.png';
+import nodeLogo from '../images/Node.png';
+import javaLogo from '../images/Java.png';
+import jsLogo from '../images/Javascript.png';
+import htmlLogo from '../images/html.png';
+import cssLogo from '../images/css.png';
+import Referencia from '../images/Referencia1.jpg';
+import Referencia2 from '../images/Referencia2.jpg';
+
+
+
+function Principal (){
+
+    return (
+        <div id="wrapper">
+            <header>
+                <div className="div-logo">
+                    <a href="./Pagina.tsx">
+                        <img src={Logo} alt="logotipo" />
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home"> Inicio </a></li>
+                        <li><a href="#sobre"> Sobre </a></li>
+                        <li><a href="#portfolio"> Portfólio </a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div id="home">
+                    <div className="bem-vindo">
+                        <h1>Bem-Vindo <br /> ao meu site <br /> Portfólio! </h1>
+                    </div>
+                    <div className="perfil">
+                    </div>
+                    <div className="nome">
+                        <div className="h1">
+                            <h1> Lucca Lopes </h1>
+                        </div>
+                        <div className="h2">
+                            <h2> Desenvolvedor Web </h2>
+                        </div>
+                        <a href="#sobre">
+                            <FiChevronDown className="setinha"/>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="sobre">
+                    <h1> Sobre </h1>
+                    <p>Tenho 21 anos, sou estudante de Análise e Desenvolvimento de <br />
+                        Sistemas pela Faculdade de Tecnologia Rubens Lara (FATEC). <br/> 
+                        Sou apaixonado por tecnologia e amo resolver problemas.
+                    </p>
+                    <hr/>
+                    <h2> Tecnologias </h2>
+                    <div className="technologies">
+                        <div className="teste">
+                            <img className="tech" src={reactLogo} alt="React"/>
+                        </div>
+                        <img className="tech" src={nodeLogo} alt="Node"/>
+                        <img className="tech" src={javaLogo} alt="Java"/>
+                        <img className="tech" src={jsLogo} alt="Javascript"/>
+                        <img className="tech" src={htmlLogo} alt="Html"/>
+                        <img className="tech" src={cssLogo} alt="Css"/>
+                    </div>
+                    <a href="#portfolio">
+                        <FiChevronDown className="setinha"/>
+                    </a>
+                </div>
+                
+                <div id="portfolio">
+                    <h1> Portfólio</h1>
+                    <div className="Container-wrapper">
+                        <AwesomeSlider className="carousel">
+                            <div data-src={Referencia} />
+                            <div data-src={Referencia2} />
+                            <div data-src={nodeLogo} />
+                        </AwesomeSlider>
+                    </div>
+                </div>
+               
+            </main>
+        </div>
+    );
+}
+
+export default Principal;
