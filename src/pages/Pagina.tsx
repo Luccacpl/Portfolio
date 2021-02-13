@@ -55,49 +55,105 @@ function Pagina(){
             </div>
 
             <div id="Sobre">
-                <div className="card">
-                    <div className="box">
-                        <div className="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div className="number">
-                                <h2>90<span>%</span></h2>
+                <aside className="aside-sobre">
+                    <div className="cima">
+                        <div className="card">
+                            <div className="box">
+                                <div className="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div className="number">
+                                        <h2>90<span>%</span></h2>
+                                    </div>
+                                </div>
+                                <h2 className="text">html</h2>
                             </div>
                         </div>
-                        <h2 className="text">html</h2>
-                    </div>
-                </div>
 
-                <div className="card">
-                    <div className="box">
-                        <div className="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div className="number">
-                                <h2>50<span>%</span></h2>
+                        <div className="card">
+                            <div className="box">
+                                <div className="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div className="number">
+                                        <h2>50<span>%</span></h2>
+                                    </div>
+                                </div>
+                                <h2 className="text">CSS</h2>
                             </div>
                         </div>
-                        <h2 className="text">CSS</h2>
-                    </div>
-                </div>
 
-                <div className="card">
-                    <div className="box">
-                        <div className="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div className="number">
-                                <h2>60<span>%</span></h2>
+                        <div className="card">
+                            <div className="box">
+                                <div className="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div className="number">
+                                        <h2>80<span>%</span></h2>
+                                    </div>
+                                </div>
+                                <h2 className="text">React</h2>
                             </div>
                         </div>
-                        <h2 className="text">React</h2>
                     </div>
+
+                    <div className="baixo">
+                        <div className="cardBot">
+                            <div className="box">
+                                <div className="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div className="number">
+                                        <h2>60<span>%</span></h2>
+                                    </div>
+                                </div>
+                                <h2 className="text">Javascript</h2>
+                            </div>
+                        </div>
+
+                        <div className="cardBot">
+                            <div className="box">
+                                <div className="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div className="number">
+                                        <h2>65<span>%</span></h2>
+                                    </div>
+                                </div>
+                                <h2 className="text">C#</h2>
+                            </div>
+                        </div>
+
+                        <div className="cardBot">
+                            <div className="box">
+                                <div className="percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div className="number">
+                                        <h2>55<span>%</span></h2>
+                                    </div>
+                                </div>
+                                <h2 className="text">Mysql</h2>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div className="esquerda">
+                    <h1>Tecnologias</h1>
+                    <p></p>
                 </div>
 
                 <footer>
