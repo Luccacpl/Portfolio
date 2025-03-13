@@ -44,3 +44,46 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Project Scope
+
+### Functional Requirements
+
+| ID     | Description of Requirement                                                                                                | Priority |
+| ------ | ------------------------------------------------------------------------------------------------------------------------- | -------- |
+| RF-001 | The Web application should allow the registration of new users                                                            | HIGH     |
+| RF-002 | The application will provide information about the terms of use                                                           | MEDIUM   |
+| RF-003 | The application will have a page that presents itself immediately after user registration and with a form to be completed | MEDIUM   |
+| RF-004 | The application will perform user validation via a confirmation email                                                     | MEDIUM   |
+| RF-005 | The application will allow the user to log in to the site with username and password                                      | HIGH     |
+| RF-006 | The application will allow the user to request a password reset by entering their registered email address                | MEDIUM   |
+| RF-007 | The application should allow the user to manage their registration for deletion, consultation, and modification           | HIGH     |
+| RF-008 | The Web application will only allow registered users to create/modify/update their pet adoption listings                  | HIGH     |
+| RF-009 | The application should allow NGOs to register their adoption events                                                       | MEDIUM   |
+| RF-010 | The application will allow viewing of "pets" registered and posted by donors                                              | HIGH     |
+| RF-011 | The application should allow viewing of profiles of potential guardians and donors                                        | MEDIUM   |
+| RF-012 | The Web application will allow users to view events registered by NGOs on a special featured page                         | MEDIUM   |
+| RF-013 | The application should allow NGOs to manage their adoption event ads                                                      | MEDIUM   |
+| RF-014 | The Web application will have an area where users can post photos, with captions, of their "pets"                         | MEDIUM   |
+| RF-015 | The Web application should incorporate feedback mechanisms to allow users to provide comments on their experience         | LOW      |
+
+### Non-Functional Requirements
+
+| ID      | Description of Requirement                                                                                                                  | Priority |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| RNF-001 | The site must be responsive, that is, it must respond optimally and adapt, without distortions, to the resolution of mobile devices         | MEDIUM   |
+| RNF-002 | The interface must be pleasant, practical, and easy to use                                                                                  | HIGH     |
+| RNF-003 | The system must be cross-platform, enabling its use on devices with Microsoft Windows, Linux, or MacOS operating systems                    | HIGH     |
+| RNF-004 | The system must guarantee data security in accordance with the General Law on the Protection of Personal Data (Brazilian Law 13709/2018)    | MEDIUM   |
+| RNF-005 | The application must send the user an email for registration confirmation                                                                   | LOW      |
+| RNF-006 | The Web application will offer relevant information about local shelters and resources through the geolocation mechanism                    | LOW      |
+| RNF-007 | The Web application should have a filter mechanism, by State and size, to facilitate the search of potential guardians for the ideal animal | LOW      |
+
+### Restrictions
+
+| ID  | Restriction                                                |
+| --- | ---------------------------------------------------------- |
+| 01  | The project must be delivered by the end of the semester   |
+| 02  | A backend module cannot be developed                       |
+| 03  | The project must be developed in HTML, CSS, and JavaScript |
+| 04  | There should be no monetary transactions within the site   |
